@@ -8,11 +8,24 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
+    const f1 = prompt("escolha a 1 fruta:")
+    const f2 = prompt("escolha a 2 fruta:")
+    const f3 = prompt("escolha a 3 fruta:")
 
+    const b1 = prompt("escolha a 1 bebida:")
+    const b2 = prompt("escolha a 2 bebida:")
+    const b3 = prompt("escolha a 3 bebida:")
+    let fruta;
+    let bebida;
+    let resultado;
 
     //PROCESSAMENTO
-
+    fruta  = [f1, f2, f3]
+    bebida = [b1, b2, b3]
+    resultado = [f1, f2, f3, b1, b2, b3]
 
     //SAÍDA
-
+    document.write(resultado.join(" - </br>"));
+    document.write(resultado.join(" - </br>"));
+    document.write(resultado.join(" - </br>"));
 </script>
