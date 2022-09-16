@@ -11,21 +11,26 @@
 
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let listaAntigaSUV = carrosSUV;
     let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let listaAntigaSedan = carrosSedan;
     let carrosHatch = ["308", "Focus", "i30"];
-
-    const add1 = (prompt("Informe o primeiro carro que deseja adicionar" + carrosSUV.join(" | ") + carrosSedan.join(" | ") + carrosHatch.join(" | ")  + ")"));
-    const add2 = (prompt("Informe o segundo carro que deseja adicionar" + carrosSUV.join(" | ") + carrosSedan.join(" | ") + carrosHatch.join(" | ")  + ")"));
-    const add3 = (prompt("Informe o terceiro carro que deseja adicionar" + carrosSUV.join(" | ") + carrosSedan.join(" | ") + carrosHatch.join(" | ")  + ")"));
-
-    const veic1 = (prompt("Informe sua primeira marca"));
-    const veic2 = (prompt("Informe sua segunda marca"));
-    const veic3 = (prompt("Informe sua terceira marca"));
+    let listaAntigaHatch = carrosHatch;
+    let estilos = ["1-SUV", "2-Sedan", "3-Hatch"];
+    
+    const veiculo1 = prompt("Nome do veículo a ser inserido: SUVs atuais: " + carrosSUV.join(" | ") + " Sedans atuais: " + carrosSedan.join(" | ") + " Hatches atuais: " + carrosHatch.join(" | "));
+    const estiloDoVeiculoUm = prompt("inserir o tipo de veículo: " + estilos.join(" | "));
+    const veiculo2 = prompt("Nome do veículo a ser inserido: SUVs atuais: " + carrosSUV.join(" | ") + " Sedans atuais: " + carrosSedan.join(" | ") + " Hatches atuais: " + carrosHatch.join(" | "));
+    const estiloDoVeiculoDois = prompt("inserir o tipo de veículo: " + estilos.join(" | "));
+    const veiculo3 = prompt("Nome do veículo a ser inserido: SUVs atuais: " + carrosSUV.join(" | ") + " Sedans atuais: " + carrosSedan.join(" | ") + " Hatches atuais: " + carrosHatch.join(" | "));
+    const estiloDoVeiculoTres = prompt("inserir o tipo de veículo: " + estilos.join(" | "));
     //PROCESSAMENTO
-
-    (veic1 ===)
+    (estiloDoVeiculoUm === 1) ? carrosSUV.push(veiculo1) : (estiloDoVeiculoUm === 2) ? carrosSedan.push(veiculo1) : carrosHatch.push(veiculo1);
+    (estiloDoVeiculoDois === 1) ? carrosSUV.push(veiculo2) : (estiloDoVeiculoDois === 2) ? carrosSedan.push(veiculo2) : carrosHatch.push(veiculo2);
+    (estiloDoVeiculoTres === 1) ? carrosSUV.push(veiculo3) : (estiloDoVeiculoTres === 2) ? carrosSedan.push(veiculo3) : carrosHatch.push(veiculo3);
+    
     
 
     //SAÍDA
-
+    document.write("lista nova é "+ carrosSUV.join(" | ") + carrosHatch.join(" | ") + carrosSedan.join(" | ") + ".</br>" + " a lista antiga é " +  listaAntigaSUV.join(" | ") + listaAntigaHatch.join(" | ") + listaAntigaSedan.join(" | ") + ".")
 </script>
