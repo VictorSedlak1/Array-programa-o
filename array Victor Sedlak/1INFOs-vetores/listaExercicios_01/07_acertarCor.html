@@ -10,10 +10,21 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
-
-
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const corUsuario = prompt(`Aposte numa cor: ${nomeCores.join(", ")}`).trim().toLowerCase();
     //PROCESSAMENTO
-
+    const posicaoCor = nomeCores.indexOf(corUsuario);
+    if (posicaoCor >= 0) {
+        const corSorteada = Math.floor(Math.random() * 7);
+        if (posicaoCor === corSorteada) {
+            document.write(`PARABÉS! VOCÊ ESTÁ COM SORTE NA COR ${corUsuario}!`)
+        } else {
+            alert(`A cor sorteada foi ${nomeCores[corSorteada]}`);
+            document.write("NÃO FOI DESSA VEZ.... TENTE NOVAMENTE!")
+        } 
+    } else {
+            document.write("Cor Inválida!");
+    }
 
     //SAÍDA
 
